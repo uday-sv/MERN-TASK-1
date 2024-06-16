@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 60px; /* Adjust as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    display: block;
+    background-color: #ccc; /* Default color, will be overridden */
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.sidenav a.green {
+    background-color: #4CAF50;
+}
+
+.sidenav a.blue {
+    background-color: #2196F3;
+}
+
+.sidenav a.red {
+    background-color: #f44336;
+}
+
+.sidenav a.black {
+    background-color: #555;
+}
+
+.sidenav a:hover {
+    width: 80px; /* Expand width on hover */
+}
+
+.content {
+    margin-left: 80px; /* Adjust as needed */
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}

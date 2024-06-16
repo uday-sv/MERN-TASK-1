@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css"> 
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 300px; 
+            margin: 0 auto;
+        }
+        .grid-item {
+            width: 100%;
+            padding-top: 75%; 
+            position: relative;
+        }
+        .grid-item .rectangle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .rect1 { border-radius: 5px }
+        .rect2 { border-radius: 8px }
+        .rect3 { border-radius: 20px}
+        .rect4 { border-radius: 8px }
+        .rect5 { border-radius: 5px }
+        .rect6 { border-radius: 25px }
+        .rect7 { border-radius: 100px; }
+        .rect8 { border-radius: 5px }
+        .rect9 { border-bottom-left-radius:20px ;border-bottom-right-radius:2px ;border-top-left-radius: 2px;border-top-right-radius:20px ; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th><div class="rectangle">Firstname</div></th>
+                    <th><div class="rectangle">Lastname</div></th>
+                    <th><div class="rectangle">Age</div></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><div class="rectangle">Jill</div></td>
+                    <td><div class="rectangle">Smith</div></td>
+                    <td><div class="rectangle">50</div></td>
+                </tr>
+                <tr>
+                    <td><div class="rectangle">Eve</div></td>
+                    <td><div class="rectangle">Jackson</div></td>
+                    <td><div class="rectangle">94</div></td>
+                </tr>
+                <tr>
+                    <td><div class="rectangle">John</div></td>
+                    <td><div class="rectangle">Doe</div></td>
+                    <td><div class="rectangle">80</div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="grid-container">
+        <div class="grid-item"><div class="rectangle rect1"></div></div>
+        <div class="grid-item"><div class="rectangle rect2"></div></div>
+        <div class="grid-item"><div class="rectangle rect3"></div></div>
+        <div class="grid-item"><div class="rectangle rect4"></div></div>
+        <div class="grid-item"><div class="rectangle rect5"></div></div>
+        <div class="grid-item"><div class="rectangle rect6"></div></div>
+        <div class="grid-item"><div class="rectangle rect7"></div></div>
+        <div class="grid-item"><div class="rectangle rect8"></div></div>
+        <div class="grid-item"><div class="rectangle rect9"></div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 50px auto;
+            border: 2px solid #000; 
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #000; 
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 0px 0;
+            box-sizing: border-box;
+            display: block; 
+        }
+        textarea {
+            height: 60px;
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .button {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>Registration Form</h2>
+    </div>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="firstname" required></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lastname" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password</td>
+                <td><input type="password" name="repassword" required></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="number" name="age" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="text" name="phone" required></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address" required></textarea></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text" name="state" required></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="country" required>
+                        <option value="">Choose your country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages known</td>
+                <td>
+                    <input type="checkbox" name="languages" value="english"> English
+                    <input type="checkbox" name="languages" value="kannada"> Kannada
+                    <input type="checkbox" name="languages" value="hindi"> Hindi
+                    <input type="checkbox" name="languages" value="telugu"> Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="declaration" required> I hereby declare all the given details are true
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a href="https://ethnus.com">Log in to Ethnus website</a>
+                </td>
+            </tr>
+        </table>
+        <div class="button">
+            <button> Register </button>
+        </div>
+    </form>
+    
+</div>
+
+</body>
+</html>
